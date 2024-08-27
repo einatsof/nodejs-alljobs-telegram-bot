@@ -1,9 +1,9 @@
 # AllJobs Telegram Bot
-A Telegram bot built with Node.js using the [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api), designed to scrape job listings from [alljobs.co.il](https://www.alljobs.co.il) using [cheerio](https://github.com/cheeriojs/cheerio). The bot parses HTML to extract job postings and sends only new listings directly to the user, ensuring they never miss an opportunity. A database backend tracks previously sent jobs, providing users with only the most recent updates.
+A Telegram bot built with Node.js using the [`node-telegram-bot-api`](https://github.com/yagop/node-telegram-bot-api), designed to scrape job listings from [alljobs.co.il](https://www.alljobs.co.il) using [`cheerio`](https://github.com/cheeriojs/cheerio). The bot parses HTML to extract job postings and sends only new listings directly to the user, ensuring they never miss an opportunity. A database backend tracks previously sent jobs, providing users with only the most recent updates.
 
 ## Features
 
-- Scrapes job listings from alljobs.co.il based on custom search criteria.
+- Scrapes job listings from [alljobs.co.il](https://www.alljobs.co.il) based on custom search criteria.
 - Sends new job listings directly to a Telegram bot chat.
 - Ensures that only new jobs are sent using a database to track previously sent jobs.
 
@@ -22,8 +22,8 @@ TOKEN=your-telegram-bot-token
 SEARCH=freetxt=[search term]&page=1
 ```
 
-- **TOKEN**: Your Telegram bot token. You can get this from the [BotFather](https://telegram.me/BotFather).
-- **SEARCH**: Your custom search query for job listings. Replace [search term] with your desired job search keyword or phrase.
+- **`TOKEN`**: Your Telegram bot token. You can get this from the [BotFather](https://telegram.me/BotFather).
+- **`SEARCH`**: Your custom search query for job listings. Replace [search term] with your desired job search keyword or phrase.
 
 ### 3. Install Dependencies
 ```bash
